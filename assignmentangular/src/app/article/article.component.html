@@ -1,0 +1,19 @@
+ <div class="row mt-5 ml-5 mr-5 mb-5">
+  <div class="col-6">
+      <button type="submit" class="btn buttonColor text-light"
+       (click)="addarticle()"  >ADD ARTICLE</button>
+  </div>
+</div>
+
+
+
+      <div class="container card mx-auto shadow" *ngFor="let articles of articleslist">
+        <h4>title:{{articles.title}}</h4>
+        <div>
+           {{articles.body}}
+      </div>
+      <div>
+        author: {{articles.author}}
+    </div>
+    </div>
+  
